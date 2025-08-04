@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedback</title>
+    <style>
+        body {
+            background-color: rgb(106, 146, 159);
+            margin-left: 300px auto;
+            font-family: Arial, sans-serif;
+            font-size: 15px ;
+        }
+        h1 {
+            background-color: rgba(255, 127, 80, 0.708);
+            text-align: center;
+        }
+        table {
+            margin:auto;
+            padding-left: 10px;
+        }
+        #id1 {
+            background-color:burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>FEEDBACK FORM</h1>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required /></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email_ID:</label></td>
+                <td><input type="email" id="email" name="email" required /></td>
+            </tr>
+           
+            <tr>
+                <td><label for="feedback">Feedback:</label></td>
+                <td><textarea id="feedback" name="feedback" rows="4" cols="40" placeholder="Enter your feedback" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label>How satisfied are you?</label></td>
+                <td>
+                    <input type="radio" id="satisfied" name="satisfaction" value="satisfied" required />
+                    <label for="satisfied">Satisfied</label><br />
+                    <input type="radio" id="neutral" name="satisfaction" value="neutral" />
+                    <label for="neutral">Neutral</label><br />
+                    <input type="radio" id="unsatisfied" name="satisfaction" value="unsatisfied" />
+                    <label for="unsatisfied">Unsatisfied</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" id="id1" value="Submit" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
