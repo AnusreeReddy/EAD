@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fibonacci Series</title>
+</head>
+<body>
+  <h3>Display Fibonacci series up to n terms</h3>
+  <input type="number" id="n">
+  <button onclick="showFibonacci()">Show</button>
+  <p id="output"></p>
+
+  <script>
+    function showFibonacci() {
+      const n = document.getElementById('n').value;
+      let a = 0, b = 1;
+      let result = [];
+      for (let i = 0; i < n; i++) {
+        result.push(a);
+        const next = a + b;
+        a = b;
+        b = next;
+      }
+
+      document.getElementById('output').innerHTML = result.join(', ');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Task 5 - Factorial</title></head>
+<body>
+<h3>Factorial of a number</h3>
+<input type="number" id="num" placeholder="Enter number">
+<button onclick="findFactorial()">Calculate </button>
+<p id="output"></p>
+
+<script>
+function findFactorial() {
+  let num = document.getElementById("num").value;
+  let fact = 1;
+  for (let i = 1; i <= num; i++) fact *= i;
+  document.getElementById("output").innerHTML = "Factorial of number: " + fact;
+}
+</script>
+</body>
+</html>

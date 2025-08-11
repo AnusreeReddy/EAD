@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><title>Task 10 - Prime Check</title></head>
+<body>
+<h3>Check prime number</h3>
+<input type="number" id="num">
+<button onclick="checkPrime()">Check</button>
+<p id="output"></p>
+
+<script>
+function checkPrime() {
+  let num = document.getElementById("num").value;
+  if (num <= 1) {
+    document.getElementById("output").innerHTML = "Not Prime";
+    return;
+  }
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      document.getElementById("output").innerHTML = "Not Prime";
+      return;
+    }
+  }
+  document.getElementById("output").innerHTML = "Prime";
+}
+</script>
+</body>
+</html>
