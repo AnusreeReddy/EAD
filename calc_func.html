@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+</head>
+<body>
+  <h2>Calculator</h2>
+  <script>
+    function calculator(a, b, operation) {
+      switch (operation) {
+        case "add":
+          return a + b;
+        case "subtract":
+          return a - b;
+        case "multiply":
+          return a * b;
+        case "divide":
+          return a / b;
+        case "mod":
+          return a % b;
+        default:
+          return "";
+      }
+    }
+    document.write("calculator(10, 5, 'add') = " + calculator(10, 5, "add") + "<br>");
+    document.write("calculator(10, 5, 'subtract') = " + calculator(10, 5, "subtract") + "<br>");
+    document.write("calculator(10, 5, 'multiply') = " + calculator(10, 5, "multiply") + "<br>");
+    document.write("calculator(10, 5, 'divide') = " + calculator(10, 5, "divide") + "<br>");
+    document.write("calculator(10, 5, 'mod') = " + calculator(10, 5, "mod") + "<br>");
+  </script>
+</body>
+</html>
