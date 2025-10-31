@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Task 4 - Even Numbers</title></head>
+<body>
+<h3>Even numbers</h3>
+<button onclick="showEvens()">Print</button>
+<p id="output"></p>
+
+<script>
+function showEvens() {
+  let evens = [];
+  for (let i = 2; i <= 20; i += 2) evens.push(i);
+  document.getElementById("output").innerHTML = evens.join(", ");
+}
+</script>
+</body>
+</html>
